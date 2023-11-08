@@ -1,2 +1,2 @@
-# -SQL-Project
-This project involved building a database that simulates a restaurant using the PL/SQL language and implementing it within an Oracle database management system. 
+# SQL-Project
+This project involved building a database that simulates a restaurant using the PL/SQL language and implementing it within an Oracle database management system. The project included creating an Entity-Relationship (ER) model, converting the ERD to a logical schema in a tabular model, using SQL commands to define the logical schema, writing complex queries, developing functions, procedures, triggers, generating reports, graphs, and managing user permissions.
