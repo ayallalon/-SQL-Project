@@ -1,0 +1,2 @@
+delete from orderr
+where o_id < '01/01/2023';

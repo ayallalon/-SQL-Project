@@ -1,0 +1,5 @@
+delete from supply 
+where s_id = ( select s_id from supplier  
+               where s_name = 'Rene');
+               
+            

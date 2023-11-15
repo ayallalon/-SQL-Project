@@ -1,0 +1,2 @@
+delete from supplier
+where s_name = 'Rene';
