@@ -10,7 +10,7 @@ PL/SQL
 
 SQL
 
-# Project Components
+## Project Components
 ### 1. Entity-Relationship (ER) Model
 Created an ER model to represent the restaurant's data requirements.
 Included entities such as Customers, Orders, MenuItems, and Staff.
