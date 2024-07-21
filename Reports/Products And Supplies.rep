@@ -1,0 +1,176 @@
+PL/SQL Developer Report
+
+[SQL]
+select  p_name Product_Name, s_id Supplier_Id, s_name Supplier_Name ,s_date Date_Of_Supply ,p_price * s_amount Total_Pay
+from supply natural join supplier natural join product
+where s_date > to_date('01/06/2023', 'dd/mm/yyyy') and s_date < to_date('01/01/2024', 'dd/mm/yyyy')
+order by p_name ;
+
+[Options]
+Connect=False
+Username=
+Password=2317
+Database=
+ConnectAs=
+LockMode=0
+LockedPassword=2984
+BkgColor=-16777211
+BkgImage=
+FormLayout=False
+OnlyNBSP=False
+LeftMargin=0
+TopMargin=0
+PageBreak=0
+AddSQL=False
+HandleTags=True
+
+[Styles]
+
+{Title}
+Enabled=True
+Name=Report Title
+Description=Products And Supplies
+Style=Blue Title
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{Param}
+Enabled=True
+Name=Variables
+Description=
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{Table}
+Enabled=False
+Name=Tabular Tables
+Description=
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{Form}
+Enabled=False
+Name=Form Tables
+Description=
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{Field}
+Enabled=False
+Name=Default Field
+Description=
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=SUPPLIER_ID
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=SUPPLIER_NAME
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=TOTAL_PAY
+Description=
+Style=Default Field Header
+HeaderStyle=Blue Variables
+Align=3
+Break=0
+Function=3
+Format=
+
+{*}
+Enabled=True
+Name=PRODUCT_NAME
+Description=
+Style=0
+HeaderStyle=
+Align=3
+Break=3
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=S_DATE
+Description=
+Style=
+HeaderStyle=Blue Variables
+Align=3
+Break=0
+Function=0
+Format=
+
+
+
+[CSS]
+*4-PRODUCT_NAME
+{
+}
+
+Blue Title
+{
+  Background: #000050;
+  Color: #FFFF00;
+  Font-family: "Arial Black";
+  Font-size: 12pt;
+  Font-style: Italic;
+  Text-align: Center;
+  Width: 100%;
+}
+
+Default Field Header
+{
+  Background: #E0E0E0;
+  Color: #000000;
+}
+
+Blue Variables
+{
+  Background: #333399;
+  Color: #E0E0FF;
+  Border-style: None;
+  Border-width: 0px;
+  Border-Color: #808000;
+  Padding: 0px;
+  Font-family: Arial;
+  Font-size: 7pt;
+  Font-weight: Bold;
+}
+
+

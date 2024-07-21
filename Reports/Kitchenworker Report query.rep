@@ -1,0 +1,151 @@
+PL/SQL Developer Report
+
+[SQL]
+select rank, salary, pk_id from kitchenworker natural join (select pwo_id pk_id , salary from worker where pwo_id in (select pk_id from kitchenworker))
+where pk_id not in (select pk_id from kitchenworker  natural join responsible  natural join  chooseo  natural join orderr where o_date < to_date('01/01/2023', 'dd/mm/yyyy'))
+order by rank ;
+
+[Options]
+Connect=False
+Username=
+Password=2070
+Database=
+ConnectAs=
+LockMode=0
+LockedPassword=2088
+BkgColor=-16777211
+BkgImage=
+FormLayout=False
+OnlyNBSP=False
+LeftMargin=0
+TopMargin=0
+PageBreak=0
+AddSQL=False
+HandleTags=True
+
+[Styles]
+
+{Title}
+Enabled=True
+Name=Report Title
+Description=Kitchenworker Report
+Style=Blue Title
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{Param}
+Enabled=True
+Name=Variables
+Description=
+Style=Default Report title
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Table}
+Enabled=False
+Name=Tabular Tables
+Description=
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{Form}
+Enabled=False
+Name=Form Tables
+Description=
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{Field}
+Enabled=False
+Name=Default Field
+Description=
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=PK_ID
+Description=Id
+Style=Default Field Style
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=RANK
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=3
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=SALARY
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=3
+Format=
+
+
+
+[CSS]
+Blue Title
+{
+  Background: #000050;
+  Color: #FFFF00;
+  Font-family: "Arial Black";
+  Font-size: 12pt;
+  Font-style: Italic;
+  Text-align: Center;
+  Width: 100%;
+}
+
+Default Report title
+{
+  Background: #F0F0F0;
+  Color: #000000;
+  Border-style: Solid;
+  Border-width: 1px;
+  Border-Color: #C0C0C0;
+  Padding: 1px;
+  Font-size: 12pt;
+  Font-weight: Bold;
+  Font-style: Italic;
+  Text-align: Center;
+  Width: 100%;
+}
+
+Default Field Style
+{
+  Background: #F4F4F4;
+  Color: #000000;
+}
+
+
